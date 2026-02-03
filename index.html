@@ -4,172 +4,458 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alfiya Ansari | Data Science Student</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <h2 class="logo">Alfiya Ansari</h2>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!-- NAVBAR -->
+<header class="navbar">
+  <h1 class="logo">Alfiya Ansari</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Tech Stack</a>
+    <a href="#projects">Projects</a>
+  </nav>
+</header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <img src="assets/profile.jpg" alt="Alfiya Ansari" class="profile-img">
-    <h1>Alfiya Ansari</h1>
-    <h3>Data Science Student</h3>
-    <p>
-      Data Science graduate student with hands-on experience in data analysis,
-      machine learning, statistical modeling, and end-to-end data projects using
-      Python and SQL. Seeking Data Science / Data Analyst internship or
-      working-student opportunities in Germany.
-    </p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <canvas id="bg-canvas"></canvas>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a Data Science graduate student at Universität Koblenz with strong
-      practical experience in data analysis, machine learning, deep learning,
-      and big data technologies. I enjoy transforming complex datasets into
-      actionable insights and building scalable, data-driven solutions for
-      real-world problems.
-    </p>
-  </section>
+  <div class="hero-wrapper">
 
-  <!-- Skills -->
-  <section id="skills" class="section light">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-      <div>
-        <h4>Data Analysis & Data Science</h4>
-        <p>Data Analysis, Data Science, EDA, Feature Engineering</p>
-      </div>
-
-      <div>
-        <h4>Machine Learning & AI</h4>
-        <p>Machine Learning, Deep Learning, NLP, Large Language Models (LLMs)</p>
-      </div>
-
-      <div>
-        <h4>Big Data</h4>
-        <p>Big Data, Hadoop, PySpark</p>
-      </div>
-
-      <div>
-        <h4>Databases</h4>
-        <p>SQL, NoSQL (MongoDB)</p>
-      </div>
-
-      <div>
-        <h4>Statistics</h4>
-        <p>Statistical Analysis, Statistical Testing</p>
-      </div>
-
-      <div>
-        <h4>Visualization & BI</h4>
-        <p>Tableau, Power BI, Excel</p>
-      </div>
-
-      <div>
-        <h4>Cloud & Tools</h4>
-        <p>Python, AWS, Streamlit, Flask</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-
-    <div class="card">
-      <h3>Data Science Intern – AB Technologies</h3>
-      <span>Feb 2023 – Mar 2023 | India</span>
-      <ul>
-        <li>Cleaned and analyzed 10+ datasets (50k+ records) using Python.</li>
-        <li>Performed EDA and statistical analysis on large datasets (100k+ rows).</li>
-        <li>Built ML models improving accuracy from ~72% to ~85%.</li>
-        <li>Automated reporting workflows, reducing manual effort by ~40%.</li>
-      </ul>
+    <div class="hero-image">
+      <img src="assets/profile.jpg" alt="Alfiya Ansari">
     </div>
 
-    <div class="card">
-      <h3>Volunteer Tutor – RCET</h3>
-      <span>Sep 2022 – Mar 2023 | India</span>
-      <ul>
-        <li>Tutored students in Python, statistics, and machine learning.</li>
-        <li>Led 50+ problem-solving and hands-on coding sessions.</li>
-        <li>Designed structured learning plans with real-world datasets.</li>
-      </ul>
-    </div>
-  </section>
+    <div class="hero-text">
+      <span class="intro">Hello, I'm</span>
+      <h2 class="name">Alfiya Ansari</h2>
+      <h3 class="role">Data Science Student</h3>
 
-  <!-- Projects -->
-  <section id="projects" class="section light">
-    <h2>Projects</h2>
+      <p class="description">
+        Data Science graduate student with hands-on experience in data analysis, machine learning,
+        deep learning, and statistical analysis, working on end-to-end data projects using Python,
+        SQL, and NoSQL databases. Skilled in exploratory data analysis (EDA), data visualization with
+        Tableau, feature engineering, predictive modeling, and building machine learning and large
+        language model (LLM)–based solutions. Experienced in translating complex datasets into
+        actionable insights and developing analytics workflows to support data-driven decision-making.
+        Actively seeking a Data Science or Data Analyst internship or working student role in Germany.
+      </p>
 
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Hospital Admission Analytics</h3>
-        <p>EDA, feature engineering, and predictive modeling to forecast hospital admissions.</p>
-        <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio" target="_blank">View Project</a>
+      <!-- ONLY DOWNLOAD CV -->
+      <div class="hero-buttons">
+        <a href="assets/AlfiyaAnsari_Resume.pdf" class="btn-solid" download>
+          Download CV
+        </a>
       </div>
 
-      <div class="project-card">
-        <h3>Real Estate Price Predictor</h3>
-        <p>Regression-based ML models to estimate property value and detect overpricing.</p>
-        <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Workplace Safety Risk Intelligence</h3>
-        <p>Deep learning system using TensorFlow to predict workplace safety risks.</p>
-        <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>PySpark Fraud Detection</h3>
-        <p>Large-scale fraud detection using PySpark and gradient boosting models.</p>
-        <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio" target="_blank">View Project</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/alfiya-ansari175/" target="_blank">in</a>
+        <a href="https://github.com/alfiya-ansari-175" target="_blank">gh</a>
+        <a href="https://www.kaggle.com/alfiyaansari/code" target="_blank">kg</a>
+        <a href="mailto:alfiyaansari175@gmail.com">@</a>
+        <a href="https://www.instagram.com/alfiya_.ansari._" target="_blank">ig</a>
       </div>
     </div>
-  </section>
 
-  <!-- Education -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <div class="card">
+  </div>
+</section>
+
+
+<!-- EXPERIENCE (FROM RESUME) -->
+<section id="experience" class="section light">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Data Science Intern — AB Technologies</h3>
+    <span>Nagercoil, India | Feb 2023 – Mar 2023</span>
+    <ul>
+<ul>
+  <li>Processed, cleaned, and analyzed 10+ structured datasets (50k+ records) using Python (Pandas, NumPy), improving overall data quality and consistency by ~30%.</li>
+
+  <li>Performed exploratory data analysis (EDA) and statistical analysis on large datasets (100k+ rows) to identify trends, correlations, and anomalies supporting data-driven decision-making.</li>
+
+  <li>Built, evaluated, and optimized machine learning models using scikit-learn (regression and classification), increasing prediction accuracy from ~72% to ~85% through feature engineering and hyperparameter tuning.</li>
+
+  <li>Applied feature engineering techniques including encoding, scaling, feature selection, and dimensionality reduction, improving model performance by 10–15%.</li>
+
+  <li>Automated analytics, reporting, and visualization workflows using Python, reducing manual effort by ~40% and enabling faster insights for stakeholders.</li>
+
+  <li>Collaborated with team members to interpret model outputs and translate technical findings into actionable business insights.</li>
+</ul>
+
+  </div>
+
+  <div class="card">
+    <h3>Volunteer Tutor — RCET</h3>
+    <span>Kanyakumari, India | Sep 2022 – Mar 2023</span>
+<ul>
+  <li>Tutored 15+ undergraduate students in data analysis, Python programming, statistics, and machine learning fundamentals using real-world datasets.</li>
+
+  <li>Conducted 50+ hands-on coding and problem-solving sessions focused on data preprocessing, model building, and result interpretation.</li>
+
+  <li>Designed structured learning plans, practice exercises, and mini-projects, improving concept retention, analytical thinking, and student confidence.</li>
+
+  <li>Provided one-on-one mentoring to help students bridge theory and practical implementation in data science workflows.</li>
+</ul>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <h2 class="edu-title">Education</h2>
+
+  <div class="education-box">
+    <div class="edu-item">
       <h3>MSc Web & Data Science</h3>
-      <p>Universität Koblenz, Germany (Expected 2026)</p>
+      <p class="edu-org">Universität Koblenz</p>
+      <p class="edu-loc">Koblenz, Germany</p>
+      <p class="edu-time">Expected Oct 2026</p>
     </div>
-    <div class="card">
-      <h3>BE Computer Science & Engineering</h3>
-      <p>Anna University, India – CGPA: 9.0/10</p>
+
+    <div class="edu-item">
+      <h3>Bachelor of Engineering</h3>
+      <p class="edu-org">Anna University</p>
+      <p class="edu-loc">Chennai, India</p>
+      <p class="edu-time">Aug 2019 – May 2023</p>
+      <p class="edu-extra">CGPA: 9.0 / 10 — First Class with Distinction</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="section light">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alfiyaansari175@gmail.com">alfiyaansari175@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/alfiya-ansari175/" target="_blank">linkedin.com/in/alfiya-ansari175</a></p>
-    <p>GitHub: <a href="https://github.com/alfiya-ansari-175" target="_blank">github.com/alfiya-ansari-175</a></p>
-  </section>
 
-  <footer>
-    <p>© 2026 Alfiya Ansari</p>
-  </footer>
 
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="skills-title">Technical Skills</h2>
+
+  <div class="skills-box">
+
+    <div class="skill-item">Python</div>
+    <div class="skill-item">MySQL</div>
+    <div class="skill-item">NoSQL (MongoDB)</div>
+    <div class="skill-item">Exploratory Data Analysis (EDA)</div>
+    <div class="skill-item">NumPy & Pandas</div>
+    <div class="skill-item">Matplotlib & Seaborn</div>
+    <div class="skill-item">Plotly & Statsmodels</div>
+
+    <div class="skill-item">Statistical Analysis</div>
+    <div class="skill-item">Statistical Testing</div>
+    <div class="skill-item"> ETL Pipeline Development</div>
+  
+    <div class="skill-item">Machine Learning</div>
+    <div class="skill-item">Scikit-learn</div>
+    <div class="skill-item">Deep Learning</div>
+    <div class="skill-item">Natural Language Processing</div>
+    <div class="skill-item">Large Language Models</div>
+    <div class="skill-item">Time Series Analysis</div>
+    <div class="skill-item">TensorFlow</div>
+
+
+    <div class="skill-item">HTML & CSS</div>
+    <div class="skill-item">Flask</div>
+    <div class="skill-item">Streamlit</div>
+
+    <div class="skill-item">Big Data (Hadoop Ecosystem)</div>
+    <div class="skill-item">HDFS, MapReduce</div>
+    <div class="skill-item">YARN, ZooKeeper</div>
+    <div class="skill-item">Hive, HBase</div>
+    <div class="skill-item">PySpark</div>
+
+    <div class="skill-item">Tableau</div>
+    <div class="skill-item">Power BI</div>
+    <div class="skill-item">AWS (EC2, S3)</div>
+    <div class="skill-item">AWS (IAM, DynamoDB)</div>
+    <div class="skill-item">AWS (RDS, RedShift)</div>
+    <div class="skill-item">AWS (Lambda,SageMaker) </div>
+
+    <div class="skill-item">Git & GitHub</div>
+    <div class="skill-item">MLOps Basics</div>
+    <div class="skill-item">Analytical Thinking</div>
+    <div class="skill-item">Problem Solving</div>
+    <div class="skill-item">Data Storytelling</div>
+
+  </div>
+</section>
+
+<!-- Certificates-->
+ <section id="certifications" class="section">
+  <h2 class="cert-title">Certifications</h2>
+
+  <div class="cert-list">
+
+    <div class="cert-card">
+      <h3>Large Language Models (LLMs): Foundation Models from the Ground Up</h3>
+      <span class="cert-provider">Databricks · Issued Jun 2025</span>
+      <p>
+        Gained a strong understanding of large language models, foundation models,
+        LLM architectures, prompt engineering concepts, and real-world applications
+        of generative AI systems.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Apache Spark™ Programming with Databricks</h3>
+      <span class="cert-provider">Databricks · Issued May 2025</span>
+      <p>
+        Learned distributed data processing using Apache Spark and PySpark,
+        including DataFrames, transformations, actions, and building scalable
+        big data pipelines.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>The Data Science Course: Complete Data Science Bootcamp 2024</h3>
+      <span class="cert-provider">365 Careers · Issued Nov 2024</span>
+      <p>
+        Comprehensive end-to-end data science training covering data cleaning,
+        preprocessing, feature engineering, predictive analytics, machine learning,
+        and web deployment using HTML, CSS, Flask, and Streamlit with AWS services.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Data Analytics Course</h3>
+      <span class="cert-provider">Google · Issued Apr 2022</span>
+      <p>
+        Developed strong foundations in data analytics, exploratory data analysis (EDA),
+        dashboard development, reporting, and data visualization using Tableau and
+        Python libraries such as NumPy, Pandas, Matplotlib, Seaborn, and Plotly.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Statistics & Mathematics for Data Science & Data Analytics</h3>
+      <span class="cert-provider">Udemy · Issued Apr 2022</span>
+      <p>
+        Built a solid understanding of statistical analysis, hypothesis testing,
+        probability concepts, and mathematical foundations required for data science
+        and analytics.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>SQL – MySQL for Data Analytics and Business Intelligence</h3>
+      <span class="cert-provider">365 Careers · Issued Mar 2025</span>
+      <p>
+        Learned advanced SQL concepts including joins, subqueries, aggregations,
+        and analytical queries using MySQL for data analytics and business intelligence.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Neural Networks and Deep Learning</h3>
+      <span class="cert-provider">DeepLearning.AI · Issued Jan 2022</span>
+      <p>
+        Covered neural network fundamentals, backpropagation, deep learning models,
+        and applications of deep learning in natural language processing.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Machine Learning with Python – Complete Certification Training</h3>
+      <span class="cert-provider">Udemy · Issued Apr 2021</span>
+      <p>
+        Hands-on training in machine learning using Python, including supervised
+        and unsupervised learning, model evaluation, and implementation using
+        scikit-learn.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Big Data</h3>
+      <span class="cert-provider">Udemy · Issued May 2021</span>
+      <p>
+        Learned core big data concepts and Hadoop ecosystem components such as
+        HDFS, MapReduce, Hive, HBase, and YARN for large-scale data processing.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Learn MongoDB – Leading NoSQL Database from Scratch</h3>
+      <span class="cert-provider">Udemy · Issued Apr 2022</span>
+      <p>
+        Gained practical experience with MongoDB, NoSQL data modeling, CRUD operations,
+        and aggregation pipelines for scalable database applications.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="projects-title">Projects</h2>
+
+  <div class="projects-grid">
+        <div class="project-card">
+      <img src="images/risk.jpg" alt="Workplace Safety Risk Intelligence Platform">
+      <h3>Workplace Safety Risk Intelligence Platform</h3>
+      <p>
+        Built an AI-powered decision support system to predict workplace accident
+        severity and assess safety risk using historical industrial accident data
+        and deep learning models.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Workplace%20Safety%20Risk%20Intelligence%20Platform" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+        <img src="images/healthcare.jpg" alt="Healthcare Analytics">
+        <h3>Hospital Admission Analytics & Predictive Modeling Platform</h3>
+        <p>
+          Developed a production-ready healthcare analytics platform combining data
+          engineering, feature engineering, machine learning models, and interactive
+          Streamlit dashboards for predictive insights.
+        </p>
+        <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Hospital%20Admission%20Analytics%20%26%20Predictive%20Modeling%20Platform" target="_blank">GitHub</a>
+    </div>
+
+     <div class="project-card">
+      <img src="images/house.jpg" alt="Real-Estate Fair Value & Overpricing Predictor">
+      <h3>Real-Estate Fair Value & Overpricing Predictor</h3>
+      <p>
+        Built an uncertainty-aware machine learning system to estimate fair property
+        value, confidence intervals, and overpricing risk using tree-based models
+        and quantile regression.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Real-Estate%20Fair%20Value%20%26%20Overpricing%20Predictor" target="_blank">GitHub</a>
+    </div>   
+
+        <div class="project-card">
+      <img src="images/bigdatafraud.jpg" alt="Big Data Fraud Detection">
+      <h3>PySpark Analysis for Better Fraud Detection with Gradient Boosting</h3>
+      <p>
+        Implemented scalable fraud detection using PySpark for distributed data
+        preprocessing and feature engineering, followed by Gradient Boosting
+        classification and model evaluation.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/PySpark%20Analysis%20for%20Better%20Fraud%20Detection%20with%20Gradient%20Boosting" target="_blank">GitHub</a>
+    </div>
+  <div class="project-card">
+      <img src="images/ecommerce.jpg" alt="E-Commerce Customer Behaviour Analysis">
+      <h3>German E-Commerce Customer Behaviour Analysis</h3>
+      <p>
+        Analyzed a 100,000-row German e-commerce dataset to uncover customer behavior,
+        product performance, return trends, and seasonal purchasing patterns using EDA.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/German%20E-Commerce%20Customer%20Behaviour%20Analysis" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/netflix.jpg" alt="Netflix Content Analysis">
+      <h3>Netflix Content Analysis using MySQL</h3>
+      <p>
+        Performed end-to-end SQL-based analysis of Netflix movies and TV shows to
+        identify genre dominance, regional trends, rating distributions, and
+        time-based content patterns.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Netflix%20Content%20Analysis%20using%20MySQL" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/cricket.jpg" alt="Cricket Data Analytics">
+      <h3>Statistical Analysis of International T20 Cricket Batting Performance</h3>
+      <p>
+        Conducted a pure statistical and exploratory analysis of international T20
+        batting data using descriptive statistics, hypothesis testing, and
+        visualization to uncover performance patterns.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Statistical%20Analysis%20of%20International%20T20%20Cricket%20Batting%20Performance" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card">
+      <img src="images/financialfraudanalytics.jpg" alt="Financial Fraud Analytics">
+  
+
+      <h3>Fraud Transaction Analysis using MongoDB (NoSQL) & Python ETL</h3>
+      <p>
+        Built a fraud analytics workflow using MongoDB aggregation queries and Python
+        ETL pipelines to analyze large-scale financial transactions and detect
+        suspicious behavior patterns.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Fraud%20Transaction%20Analysis%20using%20MongoDB%20(NoSQL)%20%26%20Python%20ETL" target="_blank">GitHub</a>
+    </div>
+
+      
+    <div class="project-card">
+      <img src="images/sales.jpg" alt="Retail Business Sales Analysis">
+      <h3>Retail Business Sales Analysis Using SQL and Tableau</h3>
+      <p>
+        Analyzed retail transaction data using SQL and created interactive Tableau
+        dashboards to visualize sales trends, customer behavior, and product
+        performance.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Retail%20Business%20Sales%20Analysis%20Using%20SQL%20and%20Tableau" target="_blank">GitHub</a>
+    </div>
+    
+    <div class="project-card">
+      <img src="images/music_mongodb.jpg" alt="Music Data Analytics MongoDB">
+      <h3>A NoSQL-Based Framework for Music Data Storage and Analytics Using MongoDB</h3>
+      <p>
+        Designed a scalable MongoDB-based analytics framework to explore large-scale
+        Spotify music data using advanced aggregation pipelines.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/A%20NoSQL-Based%20Framework%20for%20Music%20Data%20Storage%20and%20Analytics%20Using%20MongoDB" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/churn.jpg" alt="Customer Churn Prediction Dashboard">
+      <h3>Customer Churn Prediction Dashboard</h3>
+      <p>
+        Built an end-to-end churn prediction system for an OTT platform combining
+        synthetic data generation, machine learning models, and a Streamlit-based
+        interactive dashboard.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/StreamChurn%20AI%20%E2%80%94%20Predicting%20OTT%20User%20Churn%20Using%20Machine%20Learning" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/bayut.jpg" alt="Bayut Property Sales Intelligence">
+      <h3>Bayut Property Sales Intelligence</h3>
+      <p>
+        Performed real-estate market analysis on Bayut property listings using SQL
+        and Python, followed by advanced visual analytics and dashboards in Tableau.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Tableau%20-%20Bayut%20Property%20Sales%20Intelligence" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/ibm.jpg" alt="IBM HR Analytics Dashboard">
+      <h3>IBM HR Analytics Dashboard</h3>
+      <p>
+        Developed a Tableau dashboard using the IBM HR Employee Attrition dataset
+        to analyze workforce demographics, compensation, experience, and attrition
+        patterns for HR decision-making.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Tableau-HR%20Analytics%20on%20IBM%20Data" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/restaurant.jpg" alt="World's Finest Restaurants Dashboard">
+      <h3>World’s Finest Restaurants – Global Insights Dashboard</h3>
+      <p>
+        Created a Tableau dashboard analyzing global fine-dining trends across elite
+        restaurants, focusing on pricing, ratings, cuisines, chefs, and geographic
+        distribution.
+      </p>
+      <a href="https://github.com/alfiya-ansari-175/Data-Science-Portfolio/tree/main/Tableau-World's%20Finest%20Restaurants" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>Copyright © 2026 Alfiya Ansari. All Rights Reserved.</p>
+</footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>
