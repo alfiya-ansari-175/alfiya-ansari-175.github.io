@@ -21,6 +21,14 @@ body {
   gap: 20px;
   margin-top: 20px;
 }
+/* Center all section headings */
+.section h2,
+.edu-title,
+.skills-title,
+.cert-title,
+.projects-title {
+  text-align: center;
+}
 
 /* Card */
 .edu-item {
